@@ -2,6 +2,10 @@
 <br />
 <br />
 <button (click)="addTodo()">add</button>
+{{ receivedMessage }}
 <!-- <app-to-dolist #toDoListComponent></app-to-dolist>  using viewchild -->
-<app-to-dolist [todos]="todos" (messageEvent)="receiveMessage($event)"></app-to-dolist>
+<app-to-dolist
+  [todos]="todos"
+  (messageEvent)="receiveMessage($event)"
+></app-to-dolist>
 <!-- using input -->

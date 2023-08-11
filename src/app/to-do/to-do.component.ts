@@ -22,6 +22,7 @@ export class ToDoInputComponent implements OnInit {
   receivedMessage: string = '';
 
   receiveMessage(message: string) {
+    
     this.receivedMessage = message;
   }
 
