@@ -1,0 +1,8 @@
+<p>to-dolist works!</p>
+<button (click)="sendMessage()">Send Message to Parent</button>
+<ul>
+  <li *ngFor="let item of todos">
+    {{ item }}
+    <button (click)="deleteTodoItem(item)">Delete</button>
+  </li>
+</ul>
